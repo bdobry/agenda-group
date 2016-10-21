@@ -1,0 +1,21 @@
+{
+    "livedev.multibrowser": true,
+    "path": {
+        "css/main.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false,
+            "mikaeljorhult.bracketsAutoprefixer.visualCascade": true,
+            "mikaeljorhult.bracketsAutoprefixer.browsers": [
+                "> 1%",
+                "last 2 versions",
+                "Firefox ESR"
+            ]
+        }
+    }
+}

@@ -1,0 +1,5 @@
+#work .work-box,
+#categories .case-box,
+.cases-footer .case-box {
+    cursor: pointer;
+}
