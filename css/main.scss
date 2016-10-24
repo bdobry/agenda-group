@@ -132,7 +132,6 @@
         margin-top: 30px;
         position: relative;
         width: 100%;
-//        overflow: hidden;
         img {
           display: block;
           position: relative;
@@ -148,9 +147,9 @@
       }
       &--description {
         position: relative;
-        top: 60px;
-        width: 60%;
-        margin-bottom: 20%;
+        top: 90px;
+        width: 52%;
+        margin-bottom: 140px;
       }
     }
     .seminar-details {
@@ -181,5 +180,25 @@
         padding-left: 10px !important;
       }
     }
+  }
+  @media screen and (max-width: 480px) {
+   .seminar-hero {
+      padding-top: 10px;
+      &--bg {
+        img {
+          &:nth-of-type(2) {
+            width: 60%;
+            bottom: -50%;
+            right: 0;
+            z-index: -1;
+          }
+        }
+      }
+      &--description {
+        top: 110px;
+        width: 100%;
+        margin-bottom: 140px;
+      }
+    } 
   }
 }
