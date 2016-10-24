@@ -44,17 +44,33 @@
   .seminar-details {
     font-size: 14px;
     padding: 20px 0 40px 0;
+    width: 100%;
+    &--title {
+      width: 100%;
+      vertical-align: middle;
+      margin-bottom: 30px;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      img,
+      h2 {
+        float: left;
+      }
+      h2 {
+        display: block;
+        padding-left: 20px;
+        margin-bottom: 0;
+        max-width: 90%;
+      }
+    }
     hr {
       margin-top: 50px;
       border-color: #888;
     }
-    &--title {
-      img, h2 {
-        display: inline-block;
-      }
-      img {
-        padding-right: 20px;
-      }
+    .img-responsive {
+      margin: 0 auto;
     }
   }
   .signup-button {
@@ -107,6 +123,63 @@
         margin-bottom: 10px;
       }
       padding: 60px 0 65px 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .seminar-hero {
+      padding-top: 30px;
+      &--bg {
+        margin-top: 30px;
+        position: relative;
+        width: 100%;
+//        overflow: hidden;
+        img {
+          display: block;
+          position: relative;
+          width: 70%;
+          &:nth-of-type(2) {
+            position: absolute;
+            width: 60%;
+            bottom: -50%;
+            right: 0;
+            z-index: -1;
+          }
+        }
+      }
+      &--description {
+        position: relative;
+        top: 60px;
+        width: 60%;
+        margin-bottom: 20%;
+      }
+    }
+    .seminar-details {
+      &--title {
+        h2 {
+          display: block;
+          padding-left: 20px;
+          max-width: 88%;
+          margin-bottom: 30px;
+          margin-top: 0;
+        }
+      }
+      &--description {
+        padding-left: 76px;
+      }
+    }
+    .seminar-details--image {
+      img {
+        width: 100%;
+      }
+    }
+    .signup-button {
+      border-radius: 60px;
+      padding: 30px 20px;
+      .signup-button__text {
+        width: 75%;
+        font-size: 10px;
+        padding-left: 10px !important;
+      }
     }
   }
 }
